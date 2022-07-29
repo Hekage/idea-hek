@@ -7,7 +7,7 @@
 body {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 300;
-	background-image: repeating-linear-gradient(90deg, #fff, #fff 20px, #fbfbfb 20px, #fbfbfb 40px);
+	background: white;
 	font-size: 16px;
 }
 
@@ -661,7 +661,8 @@ background-color: white;
     margin-bottom: 12px;
   }
   .blog-picture {
-    width: 40px;
+    width: 45px;
+	height: 45px;
     border-radius: 50px;
   }
 
@@ -1440,14 +1441,16 @@ background-color: white;
 }
 
 
-/*--animacion--*/
-#videos {
+/*--animacion mal aplicada debo separar cad una de las carreras--*/
+.foto-blog {
 	filter: grayscale(100%);
-	transition: all 2s;
+	transition: all 0.5s;
 }
-
-#videos:hover {
+.foto-blog:hover {
 	filter: grayscale(0);
-	transform: scale(0.5);
+	
 }
-
+ .img-foot{
+	width: 50px;
+	height:50px;
+ }
