@@ -5,6 +5,8 @@ $colorUno: #27c091;
 }
 $headerFont: qwit;
 $colorHover:#156b51;
+@import "_responsive";
+
 
 * {
 	margin: 0;
@@ -110,7 +112,7 @@ a {
      .contenedor-texto .titulo{
     color: $colorUno;
     font-family:$headerFont,Sans-serif;
-    font-size:70px;
+    font-size: 35px;
     font-weight: 600;
     text-align: right;
     }

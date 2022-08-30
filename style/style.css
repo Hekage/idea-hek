@@ -2,6 +2,144 @@
   font-family: qwit;
   src: url(../font/Aboreto-Regular.ttf);
 }
+@media (max-width: 992px) {
+  .grilla {
+    grid-template-rows: 120px 300px 300px 1fr auto auto;
+    grid-template-areas: "header header header" "portada portada portada" "tarjetas tarjetas tarjetas" "cursos cursos cursos" "novedades novedades novedades" "footer footer footer";
+  }
+}
+@media (max-width: 768px) {
+  .grilla {
+    grid-template-rows: 120px 300px 1fr auto auto;
+    grid-template-areas: "header header header" "portada portada portada" "tarjetas tarjetas tarjetas" "cursos cursos cursos" "novedades novedades novedades" "footer footer footer";
+  }
+  .portada {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .header .logo {
+    padding-top: 15px;
+    letter-spacing: 3px;
+  }
+  .header .logo h1 {
+    font-size: 20px;
+  }
+  .menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .menu a {
+    padding-left: 43px;
+    display: inline-block;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    font-size: 12px;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .header .logo {
+    padding-top: 12px;
+    padding-bottom: 0%;
+    letter-spacing: 3px;
+  }
+  .header .logo h1 {
+    font-size: 20px;
+  }
+  .menu {
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .menu a {
+    font-weight: 400;
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+  .portada .contenedor-texto .titulo {
+    font-size: 40px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+  .grilla {
+    grid-template-rows: 250px 180px 1fr 1fr auto 100px;
+    grid-template-areas: "header header header" "portada portada portada" "tarjetas tarjetas tarjetas" "cursos cursos cursos" "novedades novedades novedades" "footer footer footer";
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header .logo {
+    padding-top: 52px;
+    padding-bottom: 0%;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  .header .logo h1 {
+    font-size: 20px;
+  }
+  .menu {
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu a {
+    padding-left: 20px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+    font-size: 16px;
+  }
+  .portada .contenedor-texto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+  .portada .contenedor-texto .portada .contenedor-texto .titulo {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .btn-link {
+    margin: 10px;
+  }
+  /* ---------- Seccion tarjetas ----------*/
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+  }
+  .tarjeta-left {
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+  }
+  .tarjeta-center {
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+  }
+  .tarjeta-right {
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+  }
+  .check-icon {
+    height: 100px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -96,7 +234,7 @@ a {
 .portada .contenedor-texto .titulo {
   color: #27c091;
   font-family: qwit, Sans-serif;
-  font-size: 70px;
+  font-size: 35px;
   font-weight: 600;
   text-align: right;
 }
