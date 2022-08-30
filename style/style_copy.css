@@ -153,6 +153,7 @@ background-color: white;
 	display: flex;
 	flex-direction: column;
 	background-color: white;
+	
 	padding: 30px;
 	align-items: center;
 }
@@ -239,7 +240,6 @@ background-color: white;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	align-self: flex-end;
-		
 }
 
 .btn-link:hover {

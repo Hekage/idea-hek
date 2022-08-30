@@ -18,33 +18,25 @@
 <body>
     
      <!-- Creando mi div grilla -->
-     <div class="grilla4">
-         <header class="header">
-            <header class="header">
-                <div class="logo">
-                    <a href="../index.html"><h1>Instituto Salud</h1></a>
-                </div>
-                <nav class="menu">
-                  <a href="../index.html">Inicio</a>
-                   <a href="cursos.html">Carreras</a>
-                   <a href="clinica.html">Blog</a>
-                   <a href="turnos.html">Contacto</a>
-                   <a href="campus.html">Campus</a>
-                </nav>
+     <div class="grillaT">
+        <header class="header">
+            <div class="logo">
+                <a href="../index.html"><h1>Instituto Salud</h1></a>
+            </div>
+            <nav class="menu">
+              <a href="../index.html">Inicio</a>
+               <a href="cursos.html">Carreras</a>
+               <a href="clinica.html">Blog</a>
+               <a href="turnos.html">Turnos</a>
+               <a href="campus.html">Campus</a>
+            </nav>
 
-         </header>
+     </header>
 
          <section class="portada">
             <div class="contenedor-texto">
                     <div>
-                    <h2 class="titulo wow animate__ animate__zoomInRight animated" style="visibility: visible; animation-name: zoomInRight;">Solicita tu turno:</h2>
-                        
-                    </div>
-                    <div>
-                     
-                        <p class="extracto wow animate__ animate__zoomInRight animated" style="visibility: visible; animation-name: zoomInRight;">
-                            WSP: +545159262826
-                        </p>
+                    <h2 class="titulo wow animate__ animate__zoomInRight animated" style="visibility: visible; animation-name: zoomInRight;">Campus</h2>
                         
                     </div>
                     
@@ -54,44 +46,23 @@
         
         
      <article>   
-        <div class="formConta"> <form action="" method="get" enctype="multipart/form-data">
-             <fieldset>
-                 <legend>Formulario de turno</legend>
+        
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Email:</label>
+                <div class="col-sm-10">
+                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                </div>  
+                <br>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña:</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword">
+            </div>
+          </div>
+                 <input type="submit" class="btnSub">
+                 <span class="regcamp"> <a href="#">Registrarse</a></span>
+                 <span class="regcamp"> <a href="#">Olvidaste tu contraseña?</a></span>    
              
-                 <label for="sexo">Sexo:</label>
-                 <br>
-                 <input type="radio" name="sexo" value="hombre" id="hombre">
-                 <label for="hombre">hombre</label>
-                 <input type="radio" name="sexo" value="mujer" id="mujer">
-                 <label for="mujer">mujer</label>
-                 <br>
-                 <label for="nombreapellido">Nombre y Apellido</label>
-                 <br>
-                 <input type="text" name="nombreapellido" placeholder="Nombre y Apellido">
-                 <br>
-                 <label for="dni">Documento</label>
-                 <br>
-                 <input type="password" name="dni" placeholder="Documento">
-                 <br>    
-                 <label for="esp">Especialidad:</label>
-                     <select name="esp" id="">
-                     <option value="cons"> Consulta</option>
-                        <option value="ped">Pediatria</option>
-                     <option value="obs">Obstetricia</option>
-                     <option value="tra">Traumatologo</option>
-                     
-                     <option value="cli">Clinica</option>
-                     <option value="onc">Oncologo</option>
-                     <option value="nut">Nutricion</option>
-                     <option value="kin">Kinesiologia</option>
-                     <option value="end">Endocrinologia</option>
-                     <option value="inf">Infectologo</option>
-                     <option value="psi">Psicologia</option>
-                     <option value="oft">Oftalmologia</option>
-
-                 </select>
-                 <input type="submit">
-             </div>
      </article>
                 
 
@@ -101,16 +72,14 @@
 
         <nav class="navbar bg-light footer">
             <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="../media/baston.png" alt="" class="d-inline-block align-text-top img-foot">
-            </a>
-            <a href="#"  class="d-inline-block align-text-top">Faceebook</a>
-            <a href="#"  class="d-inline-block align-text-top">Instagram</a>
-            <a href="#"  class="d-inline-block align-text-top">twitter</a>
-            </div>
+                <a href="#"  class="d-inline-block align-text-top redes"><img src="../media/wsp.png" alt="WSP"></a>
+                <a href="#"  class="d-inline-block align-text-top redes"><img src="../media/face.png" alt="Facebook"></a>
+                <a href="#"  class="d-inline-block align-text-top redes"><img src="../media/ig.png" alt="Instagram"></a>
+                <a href="#"  class="d-inline-block align-text-top redes"><img src="../media/twitter.png" alt="Twitter"></a>
+                </div>
           </nav>
 
      </div>
     
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-</body></html
+</body></html>

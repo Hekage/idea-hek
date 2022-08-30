@@ -1,5 +1,10 @@
 $colorUno: #27c091;
-
+@font-face {
+    font-family: qwit;
+    src: url(../font/Aboreto-Regular.ttf);
+}
+$headerFont: qwit;
+$colorHover:#156b51;
 
 * {
 	margin: 0;
@@ -8,7 +13,7 @@ $colorUno: #27c091;
 }
 
 body {
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: $headerFont;
 	font-weight: 300;
 	background: white;
 	font-size: 16px;
@@ -61,7 +66,7 @@ a {
                     font-size: 30px;
                     color: white;
                     flex: 1;
-                    
+                    font-family: qwit;
                 }
             }
         }
@@ -84,8 +89,9 @@ a {
                  text-align: center;
                  transition: 0.2s ease all;
                  font-size: 16px;
-                     &:hover {
-                                 background: #156b51;
+                 font-family: $headerFont;   
+                 &:hover {
+                                 background: $colorHover;
                                  color: #fff;}
             
         }
@@ -95,7 +101,7 @@ a {
 .portada{
 	grid-area:portada;
 	color: black;
-	background-image: url(../media/clinicaDos.jpg) ;
+	background-image: url(../media/clinicatr.jpg) ;
     background-position: center;
      background-repeat: no-repeat; 
      background-size: cover;
@@ -103,28 +109,22 @@ a {
 
      .contenedor-texto .titulo{
     color: $colorUno;
-    font-family: poppins,Sans-serif;
+    font-family:$headerFont,Sans-serif;
     font-size:70px;
     font-weight: 600;
+    text-align: right;
     }
            
-    .extracto{
-                    font-family: poppins,Sans-serif;
-                    font-size: 60px;
-                    font-weight: 700;
-                    line-height: 1.1em;
-                    letter-spacing: -1.6px;
-                    color: #2950a3;
-}
+    
 
 }
 .tarjetas{
-	grid-area:tarjetas;
+	grid-area: tarjetas;
 	color: black;
-	background-color: white;
+	background-color:  white;
 	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 
     
 }
@@ -136,7 +136,11 @@ a {
     background-color: white;
 	padding: 30px;
 	align-items: center;
-	
+    font-family: $headerFont;
+    font-size: 17px;
+        .mini-title{
+           font-weight: bold;
+        }
 }
 .tarjeta-center{
 	flex:1;
@@ -145,6 +149,11 @@ a {
 	padding: 30px;
 	background-color: white;
 	align-items: center;
+    font-family: $headerFont;
+    font-size: 17px;
+    .mini-title{
+        font-weight: bold;
+    }
 }
  
 
@@ -156,6 +165,11 @@ a {
 	background-color: white;
 	padding: 30px;
 	align-items: center;
+    font-family: $headerFont;
+    font-size: 17px;
+    .mini-title{
+        font-weight: bold;
+    }
 }
 
 
@@ -182,6 +196,13 @@ a {
 	display: grid;
 	grid-template-columns: 1;
 	grid-gap: 20px; 
+        .foto-index:hover{
+            transform: scale(1.15);
+            transition: 0.5s;
+        }
+
+
+
 }
 
 /* ---------- Articulos ----------*/
@@ -197,6 +218,7 @@ a {
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
+        font-family: $headerFont;
     }
     .contenedor-thumbnail {
         width: 50%;
@@ -230,14 +252,19 @@ a {
 	cursor: pointer;
 	display: inline-block;
 	padding: 0.625em; 
-	background-color: #262626;
+	background-color: $colorUno;
 	font-size: 1em; 
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	align-self: flex-end;
-	&:hover {
-		background: #000;
+    font-family: $headerFont;
+    background-color: $colorUno;
+    text-decoration: none;
+    
+    &:hover {
+		background: $colorHover;
 		text-decoration: none;
+        color: #fff;
 	}
 }
 
@@ -256,21 +283,26 @@ a {
 	height: 10em; 
 	width: 10em; 
 	margin-bottom: 25px; 
-    }
+     
+}
 
     .bio {
 	margin-bottom: 25px; 
 	font-size: 20px; 
 	line-height: 25px; 
+    font-family: $headerFont;
 }
 }
 
 .foto-blog {
 	filter: grayscale(100%);
-	transition: all 0.5s;
+	
+    transition: all 0.5s;
+    width: 1335;
+    height: 751;
     &:hover {
         filter: grayscale(0);
-        
+        transform: scale(1.05);
     }
 }
 .img-foot{
@@ -304,33 +336,14 @@ a {
 
 	
         color: black;
-        background-image: url(../media/clinicaDos.jpg) ;
+        background-image: url(../media/clinicatr.jpg) ;
         background-position: center;
          background-repeat: no-repeat; /* Do not repeat the image */
          background-size: cover;
         box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
     
     }
-    .portada2 .contenedor-texto {
-        .titulo{
-            color: $colorUno;
-            font-family: poppins,Sans-serif;
-            font-size:70px;
-            font-weight: 600;
-         }
-
-         .extracto{
-            font-family: poppins,Sans-serif;
-            font-size: 60px;
-            font-weight: 700;
-            line-height: 1.1em;
-            letter-spacing: -1.6px;
-            color: #2950a3;
-         }
-    
-    
-        }
-
+   
 
 }
 
@@ -396,23 +409,16 @@ a {
     
         
             color: black;
-            background-image: url(../media/clinicaDos.jpg) ;
+            background-image: url(../media/clinicatr.jpg) ;
             background-position: center;
              background-repeat: no-repeat; /* Do not repeat the image */
              background-size: cover;
             box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
         
         }
-        .footer {
-	
-            font-size: 20px; 
-            grid-area: footer;
-            color: white;
-            padding: 25px; 
-            text-align: right;
-            box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
-            background-color: transparent;
-            background-image: linear-gradient(130deg,#27c062 0%,#27c091 89%);
+     
+        .formConta {
+            grid-area: formConta;
         }
 
         }
@@ -423,19 +429,90 @@ a {
 	
 	font-size: 20px; 
 	grid-area: footer;
-	
+    font-family: $headerFont;
 	padding: 25px; 
 	text-align: right;
 	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
 	background-color: transparent;
     background-image: linear-gradient(130deg,#27c062 0%,#27c091 89%);
-    .container-fluid .redes{
-        text-decoration: none;
+    
+    .container {
+        .redes{
+            width: 30px;
+            height: 30px;
+        }
     
     }
 }  
 
     
- 
+.grillaT{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows:60px 300px 1fr auto;
+    grid-template-areas:
+     "header header header" 
+     "portada portada portada"
+     "formConta formConta formConta "
+     "footer footer footer"
+     ;
+      
+
+        .formConta{
+            grid-area: formConta;
+            align-items: center;
+            font-family: $headerFont;
+            font-size: 17px;
+            border-radius: 10px;
+            .form{ 
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;}
+           
+             
+                
+            
+           
+        }
+        
+        
+        
+        }
+
+        .regcamp{
+            text-decoration: none;
+            color: $colorUno;
+            &:hover{
+                color: $colorUno;
+            }
+        }
+        
+
+
+
+
+
+        .btnSub{
+            align-content: center;
+   
+            &:hover {
+            background-color:$colorUno;
+            color:#fff;
+    }
+
+        }
+.regcamp{
+    text-decoration: none;
+    color: $colorUno;
+    &:hover{
+        color: $colorUno;
+    }
+}
+
+
+
+
     
    

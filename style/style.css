@@ -1,703 +1,6 @@
-@media (max-width: 1200px) {
-  body {
-    font-size: 14px;
-  }
-}
-@media (max-width: 992px) {
-  .grilla {
-    grid-template-rows: 120px 300px 300px 1fr auto auto;
-    grid-template-areas: "header header header" "portada portada portada" "tarjetas tarjetas tarjetas" "cursos cursos cursos" "novedades novedades novedades" "footer footer footer";
-  }
-}
-@media (max-width: 768px) {
-  .grilla {
-    grid-template-rows: 120px 300px 1fr auto auto;
-    grid-template-areas: "header header header" "portada portada portada" "tarjetas tarjetas tarjetas" "cursos cursos cursos" "novedades novedades novedades" "footer footer footer";
-  }
-  .portada {
-    background-color: white;
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px;
-  }
-  .header {
-    flex-direction: column;
-  }
-  .header .logo {
-    padding-top: 15px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-  }
-  .header .logo h1 {
-    font-size: 20px;
-  }
-  .menu {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  .menu a {
-    padding-left: 43px;
-    display: inline-block;
-  }
-}
-@media (max-width: 576px) {
-  body {
-    font-size: 12px;
-  }
-  .header {
-    flex-direction: column;
-  }
-  .header .logo {
-    padding-top: 12px;
-    padding-bottom: 0%;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-  }
-  .header .logo .logo h1 {
-    font-size: 20px;
-  }
-  .menu {
-    flex: 1;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .menu a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding-bottom: 10px;
-    transition: 0.2s ease all;
-    font-size: 16px;
-  }
-  .portada .contenedor-texto .extracto {
-    font-family: poppins, Sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 1.1em;
-    letter-spacing: -1.6px;
-    color: #868b8d;
-  }
-  .portada .contenedor-texto .titulo {
-    color: #27c062;
-    font-family: poppins, Sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-  }
-}
-@media (max-width: 320px) {
-  body {
-    font-size: 12px;
-  }
-  .grilla {
-    grid-template-rows: 250px 180px 1fr 1fr auto 100px;
-    grid-template-areas: "header header header" "portada portada portada" "tarjetas tarjetas tarjetas" "cursos cursos cursos" "novedades novedades novedades" "footer footer footer";
-  }
-  .header {
-    flex-direction: column;
-    align-items: center;
-  }
-  .header .logo {
-    padding-top: 52px;
-    padding-bottom: 0%;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-  }
-  .header .logo h1 {
-    font-size: 20px;
-  }
-  .menu {
-    flex: 1;
-    flex-direction: row;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .menu a {
-    padding-left: 20px;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    transition: 0.2s ease all;
-    font-size: 16px;
-  }
-  .portada .contenedor-texto {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    row-gap: 4px;
-  }
-  .portada .contenedor-texto .titulo {
-    color: #27c062;
-    font-family: poppins, Sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-  }
-  .portada .contenedor-texto .extracto {
-    font-family: poppins, Sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.1em;
-    letter-spacing: -1.6px;
-    color: #2950a3;
-  }
-  .btn-link {
-    margin: 10px;
-  }
-  /* ---------- Seccion tarjetas ----------*/
-  .tarjetas {
-    grid-area: tarjetas;
-    color: black;
-    background-color: white;
-    box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
-    display: flex;
-    flex-direction: column;
-  }
-  .tarjeta-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    padding: 30px;
-    align-items: center;
-  }
-  .tarjeta-center {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    align-items: center;
-  }
-  .tarjeta-right {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    padding: 30px;
-    align-items: center;
-  }
-  .icono-tarjeta {
-    flex: 1;
-  }
-  .check-icon {
-    height: 100px;
-  }
-  .mini-title {
-    flex: 1;
-  }
-  .mini-description {
-    flex: 1;
-  }
-}
-/* haciendo responsive videos*/
-@media (max-width: 1200px) {
-  body {
-    font-size: 14px;
-  }
-}
-@media (max-width: 992px) {
-  .grilla2 {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 60px 300px 600px auto;
-    grid-template-areas: "header header header" "portada portada portada" "videos videos novedades" "videos videos novedades" "footer footer footer";
-  }
-}
-@media (max-width: 768px) {
-  .grilla2 {
-    grid-template-rows: 120px 300px 1fr auto auto;
-    grid-template-areas: "header header header" "portada portada portada" "videos videos videos" "videos videos videos" "novedades novedades novedades" "footer footer footer";
-  }
-  .portada {
-    background-color: white;
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px;
-  }
-  .header {
-    flex-direction: column;
-  }
-  .header .logo {
-    padding-top: 15px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-  }
-  .logo h1 {
-    font-size: 20px;
-  }
-  .menu {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  .menu a {
-    padding-left: 43px;
-    display: inline-block;
-  }
-}
-@media (max-width: 576px) {
-  body {
-    font-size: 12px;
-  }
-  .header {
-    flex-direction: column;
-  }
-  .header .logo {
-    padding-top: 12px;
-    padding-bottom: 0%;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-  }
-  .logo h1 {
-    font-size: 20px;
-  }
-  .menu {
-    flex: 1;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .menu a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding-bottom: 10px;
-    transition: 0.2s ease all;
-    font-size: 16px;
-  }
-  .portada .contenedor-texto .titulo {
-    color: #27c062;
-    font-family: poppins, Sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-  }
-  .portada .contenedor-texto .extracto {
-    font-family: poppins, Sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 1.1em;
-    letter-spacing: -1.6px;
-    color: #2950a3;
-  }
-  .blog-grid {
-    grid-template-columns: 1fr;
-    row-gap: 40px;
-  }
-}
-@media (max-width: 320px) {
-  body {
-    font-size: 12px;
-  }
-  .grilla2 {
-    grid-template-rows: 250px 180px 650px 1fr auto 100px;
-    grid-template-areas: "header header header" "portada portada portada" "videos videos videos" "videos videos videos" "novedades novedades novedades" "footer footer footer";
-  }
-  .header {
-    flex-direction: column;
-    align-items: center;
-  }
-  .header .logo {
-    padding-top: 52px;
-    padding-bottom: 0%;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-  }
-  .logo h1 {
-    font-size: 20px;
-  }
-  .menu {
-    flex: 1;
-    flex-direction: row;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .menu a {
-    padding-left: 20px;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    transition: 0.2s ease all;
-    font-size: 16px;
-  }
-  .portada .contenedor-texto {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    row-gap: 4px;
-  }
-  .portada .contenedor-texto .titulo {
-    color: #27c062;
-    font-family: poppins, Sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-  }
-  .portada .contenedor-texto .extracto {
-    font-family: poppins, Sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.1em;
-    letter-spacing: -1.6px;
-    color: #2950a3;
-  }
-  .btn-link {
-    margin: 10px;
-  }
-  .blog-grid {
-    grid-template-columns: 1fr;
-    row-gap: 40px;
-  }
-}
-/* blog*/
-.grilla3 {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 60px 300px 1fr auto;
-  grid-template-areas: "header header header" "portada portada portada" "cursos cursos cursos" "footer footer footer";
-}
-
-/*---------- FOOTER ----------*/
-.grilla3 .footer {
-  font-size: 20px;
-  grid-area: footer;
-  color: white;
-  padding: 25px;
-  text-align: right;
-  box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
-  background-color: transparent;
-  background-image: linear-gradient(130deg, #27c062 0%, #27c091 89%);
-}
-
-.grilla3 .portada {
-  color: black;
-  background-image: url(../media/clinica.jpg);
-  background-position: center;
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
-  box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
-}
-
-/*haciendo responsivo el blog*/
-@media (max-width: 1200px) {
-  body {
-    font-size: 14px;
-  }
-}
-@media (max-width: 992px) {
-  .grilla3 {
-    grid-template-rows: 120px 300px 300px 1fr auto auto;
-    grid-template-areas: "header header header" "portada portada portada" "tarjetas tarjetas tarjetas" "cursos cursos cursos" "novedades novedades novedades" "footer footer footer";
-  }
-}
-@media (max-width: 768px) {
-  .grilla3 {
-    grid-template-rows: 120px 300px 1fr auto;
-    grid-template-areas: "header header header" "portada portada portada" "cursos cursos cursos" "footer footer footer";
-  }
-  .portada {
-    background-color: white;
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px;
-  }
-  .header {
-    flex-direction: column;
-  }
-  .header .logo {
-    padding-top: 15px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-  }
-  .header .logo h1 {
-    font-size: 20px;
-  }
-  .menu {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  .menu a {
-    padding-left: 43px;
-    display: inline-block;
-  }
-}
-@media (max-width: 576px) {
-  body {
-    font-size: 12px;
-  }
-  .header {
-    flex-direction: column;
-  }
-  .header .logo {
-    padding-top: 12px;
-    padding-bottom: 0%;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-  }
-  .header .logo h1 {
-    font-size: 20px;
-  }
-  .menu {
-    flex: 1;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .menu a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding-bottom: 10px;
-    transition: 0.2s ease all;
-    font-size: 16px;
-  }
-  .portada .contenedor-texto .titulo {
-    color: #27c091;
-    font-family: poppins, Sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-  }
-  .portada .contenedor-texto .extracto {
-    font-family: poppins, Sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 1.1em;
-    letter-spacing: -1.6px;
-    color: #2950a3;
-  }
-}
-@media (max-width: 320px) {
-  body {
-    font-size: 12px;
-  }
-  .grilla3 {
-    grid-template-rows: 250px 180px 1fr auto;
-    grid-template-areas: "header header header" "portada portada portada" "cursos cursos cursos" "footer footer footer";
-  }
-  .header {
-    flex-direction: column;
-    align-items: center;
-  }
-  .header .logo {
-    padding-top: 52px;
-    padding-bottom: 0%;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-  }
-  .header .logo h1 {
-    font-size: 20px;
-  }
-  .menu {
-    flex: 1;
-    flex-direction: row;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .menu a {
-    padding-left: 20px;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    transition: 0.2s ease all;
-    font-size: 16px;
-  }
-  .portada .contenedor-texto {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    row-gap: 4px;
-  }
-  .portada .contenedor-texto .titulo {
-    color: #27c091;
-    font-family: poppins, Sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-  }
-  .portada .contenedor-texto .extracto {
-    font-family: poppins, Sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.1em;
-    letter-spacing: -1.6px;
-    color: #2950a3;
-  }
-}
-/* haciendo responsive el contacto*/
-/*haciendo responsivo el blog*/
-@media (max-width: 1200px) {
-  body {
-    font-size: 14px;
-  }
-  .grilla4 {
-    grid-template-rows: 120px 300px 400px auto;
-    grid-template-areas: "header header header" "portada portada portada" "cursos cursos cursos" "footer footer footer";
-  }
-}
-@media (max-width: 992px) {
-  .grilla4 {
-    grid-template-rows: 120px 300px 400px auto;
-    grid-template-areas: "header header header" "portada portada portada" "cursos cursos cursos" "footer footer footer";
-  }
-}
-@media (max-width: 768px) {
-  .grilla4 {
-    grid-template-rows: 120px 300px 400px auto;
-    grid-template-areas: "header header header" "portada portada portada" "cursos cursos cursos" "footer footer footer";
-  }
-  .portada {
-    background-color: white;
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px;
-  }
-  .header {
-    flex-direction: column;
-  }
-  .header .logo {
-    padding-top: 15px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-  }
-  .header .logo h1 {
-    font-size: 20px;
-  }
-  .menu {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  .menu a {
-    padding-left: 43px;
-    display: inline-block;
-  }
-}
-@media (max-width: 576px) {
-  body {
-    font-size: 12px;
-  }
-  .header {
-    flex-direction: column;
-  }
-  .header .logo {
-    padding-top: 12px;
-    padding-bottom: 0%;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-  }
-  .header .logo h1 {
-    font-size: 20px;
-  }
-  .menu {
-    flex: 1;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .menu a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding-bottom: 10px;
-    transition: 0.2s ease all;
-    font-size: 16px;
-  }
-  .portada .contenedor-texto .titulo {
-    color: #27c091;
-    font-family: poppins, Sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-  }
-  .portada .contenedor-texto .extracto {
-    font-family: poppins, Sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 1.1em;
-    letter-spacing: -1.6px;
-    color: #2950a3;
-  }
-}
-@media (max-width: 320px) {
-  body {
-    font-size: 12px;
-  }
-  .grilla4 {
-    grid-template-rows: 250px 180px 400px auto;
-    grid-template-areas: "header header header" "portada portada portada" "cursos cursos cursos" "footer footer footer";
-  }
-  .header {
-    flex-direction: column;
-    align-items: center;
-  }
-  .header .logo {
-    padding-top: 52px;
-    padding-bottom: 0%;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-  }
-  .header .logo h1 {
-    font-size: 20px;
-  }
-  .menu {
-    flex: 1;
-    flex-direction: row;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .menu a {
-    padding-left: 20px;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    transition: 0.2s ease all;
-    font-size: 16px;
-  }
-  .menu .portada .contenedor-texto {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    row-gap: 4px;
-  }
-  .menu .portada .contenedor-texto .titulo {
-    color: #27c091;
-    font-family: poppins, Sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-  }
-  .menu .portada .contenedor-texto .extracto {
-    font-family: poppins, Sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.1em;
-    letter-spacing: -1.6px;
-    color: #2950a3;
-  }
+@font-face {
+  font-family: qwit;
+  src: url(../font/Aboreto-Regular.ttf);
 }
 * {
   margin: 0;
@@ -706,7 +9,7 @@
 }
 
 body {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: qwit;
   font-weight: 300;
   background: white;
   font-size: 16px;
@@ -753,6 +56,7 @@ a {
   font-size: 30px;
   color: white;
   flex: 1;
+  font-family: qwit;
 }
 
 .menu {
@@ -772,9 +76,10 @@ a {
   text-align: center;
   transition: 0.2s ease all;
   font-size: 16px;
+  font-family: qwit;
 }
 .menu a:hover {
-  background: #000;
+  background: #156b51;
   color: #fff;
 }
 
@@ -782,7 +87,7 @@ a {
 .portada {
   grid-area: portada;
   color: black;
-  background-image: url(../media/clinicaDos.jpg);
+  background-image: url(../media/clinicatr.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -790,20 +95,12 @@ a {
 }
 .portada .contenedor-texto .titulo {
   color: #27c091;
-  font-family: poppins, Sans-serif;
+  font-family: qwit, Sans-serif;
   font-size: 70px;
   font-weight: 600;
-}
-.portada .extracto {
-  font-family: poppins, Sans-serif;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 1.1em;
-  letter-spacing: -1.6px;
-  color: #2950a3;
+  text-align: right;
 }
 
-/* ---------- Seccion tarjetas ----------*/
 .tarjetas {
   grid-area: tarjetas;
   color: black;
@@ -820,6 +117,11 @@ a {
   background-color: white;
   padding: 30px;
   align-items: center;
+  font-family: qwit;
+  font-size: 17px;
+}
+.tarjeta-left .mini-title {
+  font-weight: bold;
 }
 
 .tarjeta-center {
@@ -827,7 +129,13 @@ a {
   display: flex;
   flex-direction: column;
   padding: 30px;
+  background-color: white;
   align-items: center;
+  font-family: qwit;
+  font-size: 17px;
+}
+.tarjeta-center .mini-title {
+  font-weight: bold;
 }
 
 .tarjeta-right {
@@ -837,6 +145,11 @@ a {
   background-color: white;
   padding: 30px;
   align-items: center;
+  font-family: qwit;
+  font-size: 17px;
+}
+.tarjeta-right .mini-title {
+  font-weight: bold;
 }
 
 .icono-tarjeta {
@@ -862,6 +175,10 @@ a {
   grid-template-columns: 1;
   grid-gap: 20px;
 }
+.cursos .foto-index:hover {
+  transform: scale(1.15);
+  transition: 0.5s;
+}
 
 /* ---------- Articulos ----------*/
 .articulo-curso {
@@ -876,6 +193,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  font-family: qwit;
 }
 .articulo-curso .contenedor-thumbnail {
   width: 50%;
@@ -906,15 +224,19 @@ a {
   cursor: pointer;
   display: inline-block;
   padding: 0.625em;
-  background-color: #262626;
+  background-color: #27c091;
   font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 1px;
   align-self: flex-end;
+  font-family: qwit;
+  background-color: #27c091;
+  text-decoration: none;
 }
 .btn-link:hover {
-  background: #000;
+  background: #156b51;
   text-decoration: none;
+  color: #fff;
 }
 
 /*---------- Novedades ----------*/
@@ -937,87 +259,23 @@ a {
   margin-bottom: 25px;
   font-size: 20px;
   line-height: 25px;
+  font-family: qwit;
 }
 
 .foto-blog {
   filter: grayscale(100%);
   transition: all 0.5s;
+  width: 1335;
+  height: 751;
 }
 .foto-blog:hover {
   filter: grayscale(0);
+  transform: scale(1.05);
 }
 
 .img-foot {
   width: 50px;
   height: 50px;
-}
-
-/*---------- FOOTER ----------*/
-.grilla .footer {
-  font-size: 20px;
-  grid-area: footer;
-  color: white;
-  padding: 25px;
-  text-align: right;
-  box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
-  background-color: transparent;
-  background-image: linear-gradient(130deg, #27c062 0%, #27c091 89%);
-}
-.grilla .footer a {
-  text-decoration: none;
-  color: #fff;
-}
-
-/* ---------- Seccion tarjetas ----------*/
-.tarjetas {
-  grid-area: tarjetas;
-  color: black;
-  background-color: white;
-  box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
-  display: flex;
-  flex-direction: column;
-}
-
-.tarjeta-left {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  padding: 30px;
-  align-items: center;
-}
-
-.tarjeta-center {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  align-items: center;
-}
-
-.tarjeta-right {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  padding: 30px;
-  align-items: center;
-}
-
-.icono-tarjeta {
-  flex: 1;
-}
-
-.check-icon {
-  height: 100px;
-}
-
-.mini-title {
-  flex: 1;
-}
-
-.mini-description {
-  flex: 1;
 }
 
 /* codigo de videos*/
@@ -1034,37 +292,13 @@ a {
   grid-template-rows: 60px 300px 600px auto;
   grid-template-areas: "header header header" "portada portada portada" "videos videos videos" "videos videos videos" "footer footer footer";
 }
-.grilla2 .footer {
-  font-size: 20px;
-  grid-area: footer;
-  color: white;
-  padding: 25px;
-  text-align: right;
-  box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
-  background-color: transparent;
-  background-image: linear-gradient(130deg, #27c062 0%, #27c091 89%);
-}
 .grilla2 .portada {
   color: black;
-  background-image: url(../media/clinicaDos.jpg);
+  background-image: url(../media/clinicatr.jpg);
   background-position: center;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
-}
-.grilla2 .portada2 .contenedor-texto .titulo {
-  color: #27c091;
-  font-family: poppins, Sans-serif;
-  font-size: 70px;
-  font-weight: 600;
-}
-.grilla2 .portada2 .contenedor-texto .extracto {
-  font-family: poppins, Sans-serif;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 1.1em;
-  letter-spacing: -1.6px;
-  color: #2950a3;
 }
 
 .blog-grid {
@@ -1117,19 +351,73 @@ a {
 }
 .grilla4 .portada {
   color: black;
-  background-image: url(../media/clinicaDos.jpg);
+  background-image: url(../media/clinicatr.jpg);
   background-position: center;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
 }
-.grilla4 .footer {
+.grilla4 .formConta {
+  grid-area: formConta;
+}
+
+/*---------- FOOTER ----------*/
+.footer {
   font-size: 20px;
   grid-area: footer;
-  color: white;
+  font-family: qwit;
   padding: 25px;
   text-align: right;
   box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
   background-color: transparent;
   background-image: linear-gradient(130deg, #27c062 0%, #27c091 89%);
+}
+.footer .container .redes {
+  width: 30px;
+  height: 30px;
+}
+
+.grillaT {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 60px 300px 1fr auto;
+  grid-template-areas: "header header header" "portada portada portada" "formConta formConta formConta " "footer footer footer";
+}
+.grillaT .formConta {
+  grid-area: formConta;
+  align-items: center;
+  font-family: qwit;
+  font-size: 17px;
+  border-radius: 10px;
+}
+.grillaT .formConta .form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.regcamp {
+  text-decoration: none;
+  color: #27c091;
+}
+.regcamp:hover {
+  color: #27c091;
+}
+
+.btnSub {
+  align-content: center;
+}
+.btnSub:hover {
+  background-color: #27c091;
+  color: #fff;
+}
+
+.regcamp {
+  text-decoration: none;
+  color: #27c091;
+}
+.regcamp:hover {
+  color: #27c091;
 }/*# sourceMappingURL=style.css.map */
